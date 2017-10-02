@@ -21,7 +21,7 @@ public class Blast {
 
 			// latch to synchronize when all threads have initialized
 			CountDownLatch threadsLatch = new CountDownLatch(THREADS);
-			// latch to synchronize when
+			// latch to synchronize when the iteration is ready, and the 'blast' can begin
 			CountDownLatch iterationLatch = new CountDownLatch(1);
 
 			for (int thread = 0; thread < THREADS; thread++) {
